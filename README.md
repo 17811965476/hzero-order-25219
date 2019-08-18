@@ -28,18 +28,27 @@ Hzero (0.10.0)
     * 表设计
     ![hodr_company](/img/hodr_company.png)
     * 索引
+    ![hodr_company—_index](/img/hodr_company_index.png)
 * 客户主数据：hodr_customer
     * 表设计
+    ![hodr_customer](/img/hodr_customer.png)
     * 索引
+    ![hodr_customer_index](/img/hodr_customer_index.png)
 * 物料主数据：hodr_item
     * 表设计
+    ![hodr_item](/img/hodr_item.png)
     * 索引
+    ![hodr_item_index](/img/hodr_item_index.png)
 * 业务数据表 - 销售订单头信息：hodr_so_header
     * 表设计
+    ![hodr_so_header](/img/hodr_so_header.png)
     * 索引
+    ![hodr_so_header_index](/img/hodr_so_header_index.png)
 * 业务数据表 - 销售订单行信息：hodr_so_line
     * 表设计
+    ![hodr_so_line](/img/hodr_so_line.png)
     * 索引
+    ![hodr_so_line_index](/img/hodr_so_line_index.png)
 ### 实现功能
 * 基于查询公司、客户、销售订单号、物料、订单状态查询销售订单数据
 * 查询订单数据
@@ -47,11 +56,13 @@ Hzero (0.10.0)
 * 实现新增/更改/查看销售订单，禁止销售订单被删除
 * 销售订单自动关闭功能
 ### 启动说明
-1. 新建数据库hzero_order；
-2. 运行hzero_order.sql文件，新建数据表，导入数据；
-3. 启动Hzero开发环境
-4. 修改application.yml文件中MySQL数据库地址、用户名、密码
-5. 修改application.yml文件中注册中心地址
-6. 修改bootstrap.yml文件中配置中心地址
+1. 新建数据库hzero_order
+2. 运行![hzero_order.sql](hzero_order.sql)文件，新建数据表，导入数据
+3. 依照![Hzero本地部署说明](hzero_starter/hzero_starter.pdf)搭建Hzero开发环境，数据库脚本见![Hzero本地部署数据库](/hzero_starter/hzero_resource.zip)
+4. Hzero本地部署完成，依次启动Hzero服务。打开![eureka](http://dev.hzero.org:8000/)查看服务启动情况
+5. 修改本项目![application.yml](/src/main/resources/application.yml)文件中MySQL数据库地址、用户名、密码
+6. 修改本项目![application.yml](/src/main/resources/application.yml)文件中注册中心地址
+7. 修改本项目![bootstrap.yml](/src/main/resources/bootstrap.yml)文件中配置中心地址
+8. 启动服务，打开![Swagger](http://dev.hzero.org:8080/swagger/swagger-ui.html)查看接口详情
 
 
