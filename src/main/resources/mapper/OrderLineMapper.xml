@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hand.infra.mapper.OrderLineMapper">
+
+    <!--    <select id="pageByOrderNumber" resultType="com.hand.domain.entity.OrderLine">-->
+    <!--        SELECT *-->
+    <!--        FROM hodr_so_line-->
+    <!--        WHERE so_header_id IN (SELECT so_header_id FROM hodr_so_header WHERE order_number = #{orderNumber})-->
+    <!--    </select>-->
+
+    <delete id="deleteByOrderNumber">
+        DELETE
+        FROM hodr_so_line
+        WHERE so_header_id IN (SELECT so_header_id FROM hodr_so_header WHERE order_number = #{orderNumber})
+    </delete>
+    <select id="getOrderStatus" resultType="java.lang.String">
+        SELECT order_status
+        FROM hodr_so_header
+        WHERE so_header_id IN (SELECT so_header_id FROM hodr_so_line WHERE so_line_id = #{soLineId})
+    </select>
+</mapper>
