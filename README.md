@@ -60,11 +60,11 @@ Hzero (0.10.0)
 1. 新建数据库hzero_order
 2. 运行![hzero_order.sql](hzero_order.sql)文件，新建数据表，导入数据
 3. 依照[Hzero本地部署说明](https://github.com/mabu-learn/hzero-order-25219/blob/master/hzero_starter/hzero_starter.pdf)搭建Hzero开发环境，数据库脚本见[Hzero本地部署数据库](https://github.com/mabu-learn/hzero-order-25219/blob/master/hzero_starter/hzero_resource.zip)
-4. Hzero本地部署完成，依次启动Hzero服务。打开![eureka](http://dev.hzero.org:8000/)查看服务启动情况
-5. 修改本项目![application.yml](/src/main/resources/application.yml)文件中MySQL数据库地址、用户名、密码
-6. 修改本项目![application.yml](/src/main/resources/application.yml)文件中注册中心地址
-7. 修改本项目![bootstrap.yml](/src/main/resources/bootstrap.yml)文件中配置中心地址
-8. 启动服务，打开![Swagger](http://dev.hzero.org:8080/swagger/swagger-ui.html)查看接口详情
+4. Hzero本地部署完成，依次启动Hzero服务。打开[eureka](http://dev.hzero.org:8000/)查看服务启动情况
+5. 修改本项目[application.yml](/src/main/resources/application.yml)文件中MySQL数据库地址、用户名、密码
+6. 修改本项目[application.yml](/src/main/resources/application.yml)文件中注册中心地址
+7. 修改本项目[bootstrap.yml](/src/main/resources/bootstrap.yml)文件中配置中心地址
+8. 启动服务，打开[Swagger](http://dev.hzero.org:8080/swagger/swagger-ui.html)查看接口详情
 ### 接口说明
 * /v1/companies  
 根据条件分页获取公司列表
