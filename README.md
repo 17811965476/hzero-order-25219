@@ -26,6 +26,7 @@ Hzero (0.10.0)
 ### 数据库设计 
 * 公司主数据：hodr_company
     * 表设计
+    ![hodr_company](/img/hodr_company.png)
     * 索引
 * 客户主数据：hodr_customer
     * 表设计
