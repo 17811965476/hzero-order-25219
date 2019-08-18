@@ -82,11 +82,11 @@ Hzero (0.10.0)
    新建订单头信息  
    * /new/orderLine  
    新建订单行信息  
-   * /edit/orderHeader
+   * /edit/orderHeader  
    编辑订单头信息  
    * /edit/orderLine  
    编辑订单行信息  
-   * /delete
+   * /delete  
    删除订单
 
 
