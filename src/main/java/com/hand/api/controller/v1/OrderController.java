@@ -134,12 +134,12 @@ public class OrderController extends BaseController {
         return Results.error();
     }
 
-    @Permission(level = ResourceLevel.ORGANIZATION)
-    @ApiOperation(value = "根据查询条件导出订单PDF")
-    @GetMapping("/export2pdf")
-    public ResponseEntity export2Pdf(OrderDTO orderDTO, PageRequest pageRequest) {
-//        List<OrderDTO> list = orderService.pageOrder(pageRequest, orderDTO);
-        orderService.exportOrder2Pdf(new HashMap<>());
-        return Results.success();
-    }
+//    @Permission(level = ResourceLevel.ORGANIZATION)
+//    @ApiOperation(value = "根据查询条件导出订单PDF")
+//    @GetMapping("/export2pdf")
+//    public ResponseEntity export2Pdf(OrderDTO orderDTO, PageRequest pageRequest) {
+////        List<OrderDTO> list = orderService.pageOrder(pageRequest, orderDTO);
+//        orderService.exportOrder2Pdf(new HashMap<>());
+//        return Results.success();
+//    }
 }
