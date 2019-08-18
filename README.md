@@ -64,5 +64,11 @@ Hzero (0.10.0)
 6. 修改本项目![application.yml](/src/main/resources/application.yml)文件中注册中心地址
 7. 修改本项目![bootstrap.yml](/src/main/resources/bootstrap.yml)文件中配置中心地址
 8. 启动服务，打开![Swagger](http://dev.hzero.org:8080/swagger/swagger-ui.html)查看接口详情
+### 接口说明
+* /v1/companies  
+根据条件分页获取公司列表
+* /v1/customers  
+根据条件分页获取客户列表
+
 
 
