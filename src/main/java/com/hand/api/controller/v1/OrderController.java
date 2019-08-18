@@ -122,7 +122,7 @@ public class OrderController extends BaseController {
     }
 
     @Permission(level = ResourceLevel.ORGANIZATION)
-    @ApiOperation(value = "编辑订单行信息")
+    @ApiOperation(value = "删除订单")
     @GetMapping("/delete")
     public ResponseEntity deleteOrder(@RequestBody OrderHeader orderHeader) {
         String orderStatus = orderService.getOrderStatus(orderHeader.getSoHeaderId(), null);
