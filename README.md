@@ -79,13 +79,13 @@ Hzero (0.10.0)
    * /detail  
    根据订单号查询订单详细信息
    * /new/orderHeader  
-   新建订单头信息
+   新建订单头信息  
    * /new/orderLine  
-   新建订单行信息
+   新建订单行信息  
    * /edit/orderHeader
-   编辑订单头信息
+   编辑订单头信息  
    * /edit/orderLine  
-   编辑订单行信息
+   编辑订单行信息  
    * /delete
    删除订单
 
